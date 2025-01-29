@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: var(--snitap-sun);
+  background-color: var(--background);
 }
 
 
@@ -44,4 +44,9 @@ h1 {
 h2 {
   font-size: var(--text-lg);
   line-height: 1.2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
