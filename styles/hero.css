@@ -36,7 +36,7 @@ section.hero {
 
   & h1 span {
     display: block;
-    animation: slideUp 5s 1s infinite ease;
+    animation: slideUp 4.5s 1s infinite ease;
   }
 
   & .buttons {
@@ -120,7 +120,9 @@ section.hero {
       opacity: 0;
 
       transform: translateX(400%);
-      animation: slideIn 2s 850ms forwards ease, appear 100ms 950ms both ;
+      animation:  slideIn 2s 850ms forwards ease, 
+                  appear 100ms 950ms both, 
+                  scaleup 2s both infinite ;
       
     }
 
@@ -130,11 +132,24 @@ section.hero {
       bottom: 35%;
 
       transform: translateX(400%);
-      animation: slideIn 2.0s 950ms both ease;
+      animation: slideIn 2.0s 950ms both ease,
+                 scaleup 2.5s both infinite ;
+
     }
 
   }
 
+}
+@keyframes scaleup {
+  0% {
+    scale: 100%;
+  }
+  50% {
+    scale: 115%;
+  }
+  100% {
+    scale: 100%;
+  }
 }
 
 @keyframes appear {
